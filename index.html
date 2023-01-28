@@ -1,13 +1,480 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Public+Sans&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <title>recidiviz</title>
+    <title>Recidiviz</title>
+    <script defer src="js/main.js"></script>
 </head>
+
 <body>
-    
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <a class="header__logo logo" href="#">
+                    <img src="images/header-logo.svg" alt="recidiviz logo">
+                </a>
+                <button class="burger" id="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav class="header__nav nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Vitalii Storozhenko</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="https://github.com/vitaliisto" class="nav__link" target="_blank">GitHub</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="https://www.figma.com/file/T4cFyLIlj1t67M5w97N43w/Recidiviz?node-id=0%3A1&t=4oZlpyXS9oMRcMD2-1" class="nav__link" target="_blank">Design</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">States</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Tools</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">People</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Learn More</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Donate</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Log In</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="page">
+            <section class="page__intro intro">
+                <div class="intro__container">
+                    <div class="intro__content">
+                        <h1 class="intro__title">
+                            Every person who safely transitions back to the community is a step toward a better society.
+                        </h1>
+                        <div class="header__text">
+                            Criminal justice leaders use Recidiviz to get a real-time picture of their system, diagnose
+                            issues, and drive meaningful changes.
+                        </div>
+                        <a href="#" class="header__button">See our work in action</a>
+                    </div>
+                    <div class="header__states states">
+                        <div class="states__descr">Trusted in:</div>
+                        <div class="states__body">
+                            <div class="states__item">Idaho</div>
+                            <div class="states__item">Maine</div>
+                            <div class="states__item">Missouri</div>
+                            <div class="states__item">North Dakota</div>
+                            <div class="states__item">Pennsylvania</div>
+                            <div class="states__item">Tennessee</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="page__about about">
+                <div class="about__container">
+                    <h2 class="about__title">
+                        We are a non-profit that partners with state criminal justice agencies to advance their use of
+                        data and reduce incarceration.
+                    </h2>
+                    <div class="about__body">
+                        <div class="about__item">
+                            <div class="about__number">1</div>
+                            <div class="about__descr">
+                                intake an agency’s disjointed data
+                            </div>
+                        </div>
+                        <div class="about__item">
+                            <div class="about__number">2</div>
+                            <div class="about__descr">
+                                deploy tools for all levels of decision making
+                            </div>
+                        </div>
+                        <div class="about__item">
+                            <div class="about__number">3</div>
+                            <div class="about__descr">
+                                improve outcomes for justice-impacted individuals
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="page__approach approach">
+                <div class="approach__container">
+                    <div class="approach__content">
+                        <div class="approach__info">
+                            <h3 class="approach__title">
+                                A human–centered definition of success.
+                            </h3>
+                            <div class="approach__text">
+                                Our approach is shaped by the perspective and experience of people impacted by the
+                                justice system. Together, we are focused on restoring equity and supporting success in
+                                the community.
+                            </div>
+                            <a href="#" class="approach__button">Our approach</a>
+                        </div>
+                        <div class="approach__images">
+                            <div class="approach__image">
+                                <img src="images/approach/01.jpg" alt="first image">
+                            </div>
+                            <div class="approach__image">
+                                <img src="images/approach/02.jpg" alt="second image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="approach__companies">
+                        <div class="approach__item">
+                            <img src="images/approach/icons/01.svg" alt="TED Talks">
+                            <span>TED Talks</span>
+                        </div>
+                        <div class="approach__item">
+                            <img src="images/approach/icons/02.svg" alt="The New York Times">
+                            <span>The New York Times</span>
+                        </div>
+                        <div class="approach__item">
+                            <img src="images/approach/icons/03.svg" alt="StateScoop">
+                            <span>StateScoop</span>
+                        </div>
+                        <div class="approach__item">
+                            <img src="images/approach/icons/04.svg" alt="Associated Press">
+                            <span>Associated Press</span>
+                        </div>
+                        <div class="approach__item">
+                            <img src="images/approach/icons/05.svg" alt="Time">
+                            <span>Time</span>
+                        </div>
+                        <div class="approach__item">
+                            <img src="images/approach/icons/06.svg" alt="Freethink">
+                            <span>Freethink</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="page__info info">
+                <div class="info__container">
+                    <h3 class="info__title">
+                        See the forest and the trees.
+                    </h3>
+                    <div class="info__text">
+                        The criminal justice system can't support safe, whole communities without feedback on what’s
+                        working and what’s not. We stitch together data from fragmented systems to provide
+                        decision-makers with the information they need to improve outcomes. With this data, we surface
+                        opportunities to safely chart a path to a smaller system, and to track the impact of policy and
+                        practice changes over time.
+                    </div>
+                </div>
+            </section>
+            <div class="page__partners partners">
+                <div class="partners__container">
+                    <div class="partners__text">
+                        Partners
+                    </div>
+                    <div class="partners__body">
+                        <div class="partners__item">
+                            <img src="images/partners/01.svg" alt="reform">
+                        </div>
+                        <div class="partners__item">
+                            <img src="images/partners/02.svg" alt="shmidt futures">
+                        </div>
+                        <div class="partners__item">
+                            <img src="images/partners/03.svg" alt="right on crime">
+                        </div>
+                        <div class="partners__item">
+                            <img src="images/partners/04.svg" alt="mozilla">
+                        </div>
+                        <div class="partners__item">
+                            <img src="images/partners/05.svg" alt="aclu">
+                        </div>
+                        <div class="partners__item">
+                            <img src="images/partners/06.svg" alt="y">
+                        </div>
+                    </div>
+                    <a href="#" class="partners__button">See All</a>
+                </div>
+            </div>
+            <div class="page__only-background only-background">
+                <img src="images/only-background.png" alt="only background">
+            </div>
+            <section class="page__instructions instructions">
+                <div class="instructions__container">
+                    <h2 class="instructions__title">
+                        Get the right information to the right person at the right time.
+                    </h2>
+                    <div class="instructions__content">
+                        <div class="instructions__row">
+                            <div class="instructions__item">
+                                <div class="instructions__subtitle">
+                                    For Leaders
+                                </div>
+                                <div class="instructions__text">
+                                    Set goals, forecast the impact of policy or practice changes, and track their
+                                    outcomes across your agency.
+                                </div>
+                            </div>
+                            <div class="instructions__item">
+                                <div class="instructions__subtitle">
+                                    For Line Staff
+                                </div>
+                                <div class="instructions__text">
+                                    Track probation and parole outcomes, see what’s leading to success, and reduce
+                                    recidivism with our case management system.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="instructions__row">
+                            <div class="instructions__item">
+                                <div class="instructions__subtitle">
+                                    For the Public
+                                </div>
+                                <div class="instructions__text">
+                                    Use open source code, public data, interactive tools, and data visualizations to
+                                    understand the state of incarceration, promote accountability, and conduct research.
+                                </div>
+                            </div>
+                            <div class="instructions__item">
+                                <div class="instructions__subtitle">
+                                    For Policymakers and Advocates
+                                </div>
+                                <div class="instructions__text">
+                                    Project the impact of policies on carceral, fiscal, and community outcomes.
+                                    Understand where disparities begin, where they grow, and whether a policy is likely
+                                    to increase or reduce them.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="page__press press">
+                <div class="press__container">
+                    <div class="press__header">
+                        <h2 class="press__title">
+                            Recidiviz in the Press
+                        </h2>
+                        <a href="#" class="press__button">See All</a>
+                    </div>
+                    <div class="press__content">
+                        <div class="press__item item-press">
+                            <div class="item-press-header">
+                                <img src="images/press/01.svg" alt="TED Talks">
+                                <div class="item-press__title">TED Talks</div>
+                                <div class="item-press__date">2.22.22</div>
+                            </div>
+                            <div class="item-press__content">
+                                Meet the 2022 class of TED Fellows
+                            </div>
+                        </div>
+                        <div class="press__item item-press">
+                            <div class="item-press-header">
+                                <img src="images/press/02.svg" alt="Correctional News">
+                                <div class="item-press__title">Correctional News</div>
+                                <div class="item-press__date">2.22.22</div>
+                            </div>
+                            <div class="item-press__content">
+                                New Partnership Aims to Help Transform Prison Conditions
+                            </div>
+                        </div>
+                        <div class="press__item item-press">
+                            <div class="item-press-header">
+                                <img src="images/press/03.svg" alt="Department of Justice">
+                                <div class="item-press__title">Department of Justice</div>
+                                <div class="item-press__date">1.26.22</div>
+                            </div>
+                            <div class="item-press__content">
+                                Justice Department Establishes Initiative to Strengthen States’ Use of Criminal Justice
+                                Data
+                            </div>
+                        </div>
+                        <div class="press__item item-press">
+                            <div class="item-press-header">
+                                <img src="images/press/04.svg" alt="The New York Times">
+                                <div class="item-press__title">The New York Times</div>
+                                <div class="item-press__date">12.27.21</div>
+                            </div>
+                            <div class="item-press__content">
+                                The 2021 Good Tech Awards
+                            </div>
+                        </div>
+                        <div class="press__item item-press">
+                            <div class="item-press-header">
+                                <img src="images/press/05.svg" alt="Corrections1">
+                                <div class="item-press__title">Corrections1</div>
+                                <div class="item-press__date">11.18.21</div>
+                            </div>
+                            <div class="item-press__content">
+                                Maine DOC to better harness correctional data to improve outcomes
+                            </div>
+                        </div>
+                        <div class="press__item item-press">
+                            <div class="item-press-header">
+                                <img src="images/press/06.svg" alt="Right on Crime">
+                                <div class="item-press__title">Right on Crime</div>
+                                <div class="item-press__date">9.9.21</div>
+                            </div>
+                            <div class="item-press__content">
+                                Together, We Can Make Mississippi Safer and Reentry-Ready
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="page__location location">
+                <div class="location__container">
+                    <div class="location__content">
+                        <h2 class="location__title">
+                            Where we work
+                        </h2>
+                        <div class="location__text">
+                            We're expanding. Get in touch and start turning your data into action.
+                        </div>
+                        <a href="#" class="location__button">Get in touch</a>
+                    </div>
+                    <div class="location__image">
+                        <img src="images/usa.png" alt="usa">
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__top">
+                <div class="footer__container">
+                    <div class="footer__column">
+                        <div class="footer__title">Company</div>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">About</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Team</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Supporters</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Diversity</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Blog</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Press</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Careers</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <div class="footer__title">Product</div>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Our Approach</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Corrections Leaders</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Corrections Staff</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Policy Impact</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Public Data</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Security</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Testimonials</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <div class="footer__title">States</div>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Overview</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Idaho</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Maine</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Michigan</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Missouri</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">North Dakota</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Pennsylvania</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Tennessee</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <div class="footer__title">Network</div>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Twitter</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Medium</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">GitHub</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__container-bottom">
+                    <div class="footer__logo">
+                        <a href="#">
+                            <img src="images/footer-logo.svg" alt="logo">
+                        </a>
+                    </div>
+                    <div class="footer__content">
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Privacy</a>
+                        <a href="#">Responsible Disclosure</a>
+                        <div class="footer__copyright">
+                            Copyright © 2017-2022, Recidiviz. All Rights Reserved.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
+
 </html>
